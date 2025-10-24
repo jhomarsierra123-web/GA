@@ -1,0 +1,476 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+#ga{
+  text-align: left;
+  margin-top: 10px;
+  padding: 0;
+  margin: 0;
+  margin-left: 30px;
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 0.10;
+  position: sticky;
+}
+nav {
+  position: fixed;        /* stay on top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding:6px 20px;
+  border: 3px solid white;
+  border-style: outset;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  z-index: 1000; 
+}
+nav a {
+ text-decoration: none;
+  color: white;
+  margin-top:0%;
+  margin: 0 40px;       /* left & right spacing lang, wala sa top-bottom */
+  border: 2px solid white;
+  padding: 6px 14px;    /* mas maliit para hindi bumaba */
+  border-radius: 20px;
+  display: inline-block;
+  vertical-align: middle; /* para pantay sa gitna */
+  
+}
+
+nav a:hover {
+  background: white;
+  color: black;
+}
+
+
+section {
+    padding: 250px;
+    height:100vh;
+    transition: 0.5s;
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.5s ease-in-out;
+}
+section.animate{
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+@keyframes fadeInUp{
+  from{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 8px 0;     /* manipis na padding */
+  font-size: 14px;    /* mas maliit na text */
+  z-index: 1000;
+}
+
+footer p {
+  margin: 0 0 4px;
+}
+.home-section {
+  background-color: #000; /* black bg */
+  color: white;
+  padding: 60px 10%;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.home-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.home-text {
+  flex: 1;
+}
+
+.home-text h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #f4f4f4;
+}
+
+.home-text p {
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+
+.social-links a {
+  color: white;
+  font-size: 18px;   /* medyo maliit icons */
+  margin: 0 6px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #f39c12;
+}
+
+body {
+  padding-bottom: 50px; /* mas maliit kasi manipis na footer */
+}
+#products {
+  background: black;
+  color: white;
+  padding: 50px 20px;
+}
+
+#products h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  text-align: center;
+  color: white;
+}
+
+.card {
+  width: 100%;
+  height: 400px;
+  perspective: 1000px;
+  margin: auto;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #111; /* dark background */
+  border: 2px solid white; /* para litaw sa black bg */
+}
+
+.card-front img, 
+.card-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+#ga{
+  text-align: left;
+  margin-top: 10px;
+  padding: 0;
+  margin: 0;
+  margin-left: 30px;
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 0.10;
+  position: sticky;
+}
+nav {
+  position: fixed;        /* stay on top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding:6px 20px;
+  border: 3px solid white;
+  border-style: outset;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  z-index: 1000; 
+}
+nav a {
+ text-decoration: none;
+  color: white;
+  margin-top:0%;
+  margin: 0 40px;       /* left & right spacing lang, wala sa top-bottom */
+  border: 2px solid white;
+  padding: 6px 14px;    /* mas maliit para hindi bumaba */
+  border-radius: 20px;
+  display: inline-block;
+  vertical-align: middle; /* para pantay sa gitna */
+  
+}
+
+nav a:hover {
+  background: white;
+  color: black;
+}
+
+
+section {
+    padding: 250px;
+    height:100vh;
+    transition: 0.5s;
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.5s ease-in-out;
+}
+section.animate{
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+@keyframes fadeInUp{
+  from{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 8px 0;     /* manipis na padding */
+  font-size: 14px;    /* mas maliit na text */
+  z-index: 1000;
+}
+
+footer p {
+  margin: 0 0 4px;
+}
+.home-section {
+  background-color: #000; /* black bg */
+  color: white;
+  padding: 60px 10%;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.home-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.home-text {
+  flex: 1;
+}
+
+.home-text h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #f4f4f4;
+}
+
+.home-text p {
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+
+.social-links a {
+  color: white;
+  font-size: 18px;   /* medyo maliit icons */
+  margin: 0 6px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #f39c12;
+}
+
+body {
+  padding-bottom: 50px; /* mas maliit kasi manipis na footer */
+}
+#products {
+  background: black;
+  color: white;
+  padding: 50px 20px;
+}
+
+#products h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  text-align: center;
+  color: white;
+}
+
+.card {
+  width: 100%;
+  height: 400px;
+  perspective: 1000px;
+  margin: auto;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #111; /* dark background */
+  border: 2px solid white; /* para litaw sa black bg */
+}
+
+.card-front img, 
+.card-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+
+/* ============================= */
+/* 📱 RESPONSIVE DESIGN SECTION  */
+/* ============================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-text h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav a {
+    margin: 8px 0;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .home-text h2 {
+    font-size: 2rem;
+  }
+
+  .home-text p {
+    font-size: 0.9rem;
+  }
+
+  .card {
+    height: 320px;
+  }
+}

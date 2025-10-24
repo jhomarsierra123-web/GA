@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Lexend:wght@100..900&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="go.css">
+    <title>Grace Originals</title>
+</head>
+<body>
+    <header>
+        <nav>
+        <h1 id="ga">grace original</h1>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+  <div class="home-container">
+    <div class="home-image">
+      <img src="13.jpg" alt="New Arrival">
+    </div>
+    <div class="home-text">
+      <h2 style="color: white;">Metanoia Collection</h2>
+      <p>
+        <b style="color:#f47a27;font-family: 'Great Vibes'; font-size:2rem;">M</b>etanoia is a Greek word that means a deep transformation of the
+        heart, mind, and way of life. It is more than just a change, it is a
+        complete turning away from the old self and turning toward God. True
+        metanoia happens when we encounter <b style="color: #f47a27;">Jesus Christ</b>. Without Him, there
+        is no genuine renewal. Only through His grace can we experience a real
+        change in direction, character, and purpose.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+     <section id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum, eius amet ipsam aut accusamus quas necessitatibus veniam obcaecati, voluptates labore fugiat. Neque ipsum ab similique explicabo ipsam dolor sequi!</p>
+    </section>
+
+    <section id="products">
+  <h2>Apparel</h2>
+  <div class="product-grid">
+
+    <div class="product">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="4.jpg" alt="Front Design">
+          </div>
+          <div class="card-back">
+            <img src="3.jpg" alt="Back Design">
+          </div>
+        </div>
+      </div>
+      <p>Dressed in Grace (Moss Green)</p>
+    </div>
+
+    <div class="product">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="2.jpg" alt="Front Design">
+          </div>
+          <div class="card-back">
+            <img src="1.jpg" alt="Back Design">
+          </div>
+        </div>
+      </div>
+      <p>White Metanoia</p>
+    </div>
+
+    <div class="product">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="8.jpg" alt="Front Design">
+          </div>
+          <div class="card-back">
+            <img src="11.jpg" alt="Back Design">
+          </div>
+        </div>
+      </div>
+      <p>Black Metanoia</p>
+    </div>
+
+    <div class="product">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="9.jpg" alt="Front Design">
+          </div>
+          <div class="card-back">
+            <img src="10.jpg" alt="Back Design">
+          </div>
+        </div>
+      </div>
+      <p>Dressed in Grace (W&amp;B)</p>
+    </div>
+
+  </div>
+</section>
+
+
+ <footer>
+    <p>&copy; 2025 Grace Originals |not for the proud| All Rights Reserved</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/graceorignals" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/grace_originals.ph/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script>
+  const links = document.querySelectorAll("nav a");
+
+  links.forEach(link => {
+    link.addEventListener("click", function(e) {
+      const target = document.querySelector(this.getAttribute("href"));
+      
+      if (target) {
+        // alisin muna animation class kung meron na
+        target.classList.remove("animate");
+        
+        // re-trigger after konting delay
+        setTimeout(() => {
+          target.classList.add("animate");
+        }, 50);
+      }
+    });
+  });
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
